@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Magnitudes Físicas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Magnitudes Físicas</h1>
+            <p class="student-name">Por: Juan José Guarnizo González</p>
+            <p>IED cristo bendito</p>
+        </header>
+
+        <main>
+            <!-- Sección Velocidad -->
+            <section class="calculator-section">
+                <h2>Velocidad</h2>
+                <form id="velocity-form">
+                    <div class="input-group">
+                        <label for="distance">Distancia (m):</label>
+                        <input type="number" id="distance" step="any" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="time-velocity">Tiempo (s):</label>
+                        <input type="number" id="time-velocity" step="any" required>
+                    </div>
+                    <button type="submit">Calcular Velocidad</button>
+                    <div class="result" id="velocity-result"></div>
+                </form>
+            </section>
+
+            <!-- Sección Aceleración -->
+            <section class="calculator-section">
+                <h2>Aceleración</h2>
+                <form id="acceleration-form">
+                    <div class="input-group">
+                        <label for="velocity-change">Cambio de velocidad (m/s):</label>
+                        <input type="number" id="velocity-change" step="any" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="time-acceleration">Tiempo (s):</label>
+                        <input type="number" id="time-acceleration" step="any" required>
+                    </div>
+                    <button type="submit">Calcular Aceleración</button>
+                    <div class="result" id="acceleration-result"></div>
+                </form>
+            </section>
+
+            <!-- Sección Fuerza -->
+            <section class="calculator-section">
+                <h2>Fuerza (Segunda Ley de Newton)</h2>
+                <form id="force-form">
+                    <div class="input-group">
+                        <label for="mass">Masa (kg):</label>
+                        <input type="number" id="mass" step="any" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="acceleration-force">Aceleración (m/s²):</label>
+                        <input type="number" id="acceleration-force" step="any" required>
+                    </div>
+                    <button type="submit">Calcular Fuerza</button>
+                    <div class="result" id="force-result"></div>
+                </form>
+            </section>
+
+            <!-- Sección Trabajo -->
+            <section class="calculator-section">
+                <h2>Trabajo Mecánico</h2>
+                <form id="work-form">
+                    <div class="input-group">
+                        <label for="force">Fuerza (N):</label>
+                        <input type="number" id="force" step="any" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="displacement">Desplazamiento (m):</label>
+                        <input type="number" id="displacement" step="any" required>
+                    </div>
+                    <button type="submit">Calcular Trabajo</button>
+                    <div class="result" id="work-result"></div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
